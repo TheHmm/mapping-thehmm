@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="//unpkg.com/d3-zoomable"></script>
+    <title>Mommy or Foe?</title>
+    <style>
+        #canvas{
+            width: 40vw;
+            height: 40vw;
+            position: absolute;
+            right: 50px;
+            bottom: 100px;
+            box-shadow: 0 0 10px #00000044;
+        }
+        .buttons{
+            bottom: 100px; 
+        }
+        #post-popup{
+            font-size: 16px;
+            /* margin: 20px; */
+            margin: 20px;
+            max-height: 35vw;
+            right: 0;
+            bottom: 0;
+        }
+        #popup-img{
+            width: 20vw;
+        }
+    </style>
+</head>
+<body>
+        <div id="page">
+
+
+            <div id="header">
+                <h1>Mommy</h1>
+                <h1>or Foe?</h1>
+            </div>
+
+            <div id="flyer">
+                <img src="mommyorfoe_momfluencers.gif"/>
+            </div>
+
+            <div id="info">
+                <div id="introduction" class="info-block">
+                    <h2>Introduction</h2>
+                    <div>
+                        <p>In 2024, we celebrate the 20th anniversary of online influencing, thanks to the mommy blogger, pioneer of many ways in which we publish our lives online. Mommy bloggers were the precursors of what we now call influencers or content creators. They were the first to publish their everyday lives in texts, tips and advice for fellow parents (for example with banner ads, at that time), and the first to monetise this. As social media transitioned from individual blogs to profile pages, the Internet became more about imagery and less about writing, more about immediacy and on-the-go content, and less about sitting down to read. That’s when mommyblogs transformed into momfluencers.</p>
+                        <p>Today, the mainstream momfluencer phenomenon is filled with different sub-niches and sub-cultures, yet most of them fall in an overarching imagery of clean, beige, marble-floored houses, making sourdough pastries from scratch, vegetable gardens, impeccable bodies and clothes, tips and tricks interspersed with ads and sponsorships. As part of our Momfluencer dossier, we wanted to map<sup>1</sup> out the different narratives that surround, and–more importantly–are shaped by momfluencers. How do momfluencers perform motherhood across different niches? What does their content say about momfluencers' core messages? Although this map is not a comprehensive picture of all the momfluencing out there, we have extracted some of the most well known and loved niches and dissect their visual and textual elements, reflecting on how our feeds affect our understanding of people, and how these people affect our feeds.</p>
+                        <br/><p><sup>1</sup> Peeters, S., & Hagen, S. (2022). The 4CAT Capture and Analysis Toolkit: A Modular Tool for Transparent and Traceable Social Media Research. Computational Communication Research, 4(2), 571–589. Retrieved from https://computationalcommunication.org/ccr/article/view/120</p>
+                    </div>
+                </div>
+                <div id="selection" class="info-block">
+                    <h2>Process / Selection</h2>
+                    <div>
+                        <p>The first step of this process was to decide on which momfluencers to include in our map. We wanted to cover different momfluencer niches while keeping to the mainstream. On Instagram,  a plethora of moms post and consume content, both textual and visual. What momfluencers do we witness first and foremost when looking at hastags like #mom?</p>
+                        <p>We identified 4 core 'moms' we wanted to focus on, spread across continents and cultures: Nara Smith as the "Minimalist / Viral" momfluencer; Sarah Wildmothering as the "Tradwife / Cottage Core" momfluencer; Brooke Raybould as the "Hyperproductive / High achieving" momfluencer; and Willow Allen as the "Fashion Model turned Mom / Indigenous (Inuit)" momfluencer. Of course, we could have gone on and on with plenty more niches, but felt that keeping the sample size limited would allow our small team more room to reflect on results and develop the mapping tool further for future projects and applications.</p>
+                    </div>
+                </div>
+                <div id="collecting" class="info-block">
+                    <h2>Process / Collecting Data</h2>
+                    <div>
+                        <p>To understand the roles of momfluencers within the Instagram ecosystem, we began by compiling a list of the 15 most popular posts for each influencer, using the 4CAT Capture and Analysis Toolkit. We based the popularity on the number of comments on each post as an indicator for engagement, which could help uncover the types of content that resonated most with each influencer’s following. The map scales the images based on the popularity per influencer, revealing nuances in engagement and motivation. The carefully curated thumbnails of the top posts could also reveal each momfluencer's curated aesthetic, and the public image they wish to convey. However, we encountered a challenge: some influencers explicitly asked followers to comment, offering incentives such as discount codes for sponsored products or entry into giveaways (e.g., Disney World vacations, iPhones, etc.). They also encouraged users to share their opinions in the comments. This strategy means comments are easily orchestrated by the momfluencers themselves and the platform dynamics, rather than organic communication amongst a network. (Due to some issues with 4CAT, unfortunately we couldn't base the popularity on likes, which would largely omit this problem, although also not foolproof.)</p>
+                        <p>The next datapoint we considered is language. What words do the moms each use the most? This can give us an idea of how they are trying to subtly direct the narratives that surround them, and what they want to be associated with. We extracted the top used words from the last 100+ captions for each momfluencer, and scaled them based on appearance. The words they have in common also reveal a lot about broadcasted motherhood as a whole.</p>
+                        <p>Another aspect we looked at was emoji use. Emojis frequently appear in the momfluencers' captions, shaping their symbolic visual identity. Most momfluencers chose a consistent selection of emojis that complemented their overall aesthetic. The most frequently used emojis—hearts, fairies, and flowers—make us associate motherhood with the ethereal, inherently feminine and overall "girl internet".</p>
+                        <p>Lastly, we investigated brand partnerships, looking for an overall trend in the products that momfluencers choose to endorse. Carrying out this investigation was not so straightforward, as not all partnerships were clearly disclosed with conventional tags like #ad or #sponsored. The products most commonly promoted included clothing, children's items, cosmetics, and wellness products, reinforcing the importance of looks and image for these momfluencers and their core messages - we are expected to not only offer a perfect childhood to our children, but also look flawless while doing so.</p>
+                    </div>
+                </div>
+                <div id="results" class="info-block">
+                    <h2>Results</h2>
+                    <div>
+                        <p>Momfluencers often balance promotional content with personal stories–in pursuit of autheticity–which resonate more deeply with their audience. Posts sharing personal milestones, such as pregnancy announcements, gender reveals, birth stories, and marriage proposals, tend to forge stronger emotional connections with their audience. Aspirational narratives on topics like work-life balance, raising children, and homeschooling were particularly popular. Overall, no matter the niche that ends up on your feed, we are left with tailor-made aesthetics for the social media platform they cater to. Aditionally, the narrative of motherhood as a "calling" leads these momfluencers to have fairly traditional and conservative messages. Thinking back to <a href="https://www.thetimes.com/world/us-world/article/my-day-with-the-trad-wife-queen-and-what-i-really-thought-of-her-qmbmmhkp8" target="_blank" style="text-decoration: underline; font-family: Times; font-style: italic;">an article that made headlines recently</a> on the popular Ballerina Farms, momfluencer performances and the contrast with real life is full of contradictions: "Children not allowed screens, but who are reality TV characters online for millions. A stay-at-home mother who has made a career out of being so. An analogue, old-fashioned farm, only working because it is underwritten by social media cash. A choice — modern in her ability to have one — to do something so very traditional."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="canvas">
+                <div class="buttons">
+                    <!-- <button id="nextDataset">Next Dataset</button> -->
+                    <button id="one">popular posts</button>
+                    <button id="two">most used words</button>
+                    <button id="three">most used emojis</button>
+                    <button id="four">sponsorships</button>
+                </div>
+                <div id="post-popup">
+                    <div id="popup-close">x</div>
+                    <div id="popup-img-div"><img id="popup-img"/></div>
+                    <div id="popup-text"></div>
+                </div>
+                <div id="fullpage-btn"><a href="fullscreen.html" target="_blank">open in fullscreen ↗️</a></div>
+            </div>
+
+
+
+        </div>
+        
+        <script>
+            const width = window.innerWidth*0.4;
+            const height = window.innerWidth*0.4;
+            const total = width + height;
+
+            let isOpen = {
+                introduction: false,
+                selection: false,
+                collecting: false,
+                results: false,
+            }
+
+            let infoblocks = document.getElementsByClassName("info-block")
+
+            for(let i = 0; i< infoblocks.length; i++){
+            infoblocks[i].addEventListener("click", function(e){
+                if(isOpen[this.id]){
+                    this.scroll({top: 0, behavior: "smooth"})
+                    this.style.height = "80px" 
+                } else{
+                    for(let i = 0; i< infoblocks.length; i++){
+                        infoblocks[i].scroll({top: 0, behavior: "smooth"})
+                        infoblocks[i].style.height = "80px"
+                        isOpen[infoblocks[i].id] = false;
+                    }
+                    this.style.height = "50vh"
+                }
+                isOpen[this.id] = !isOpen[this.id]
+            })
+        }
+
+        </script>
+        <script src="mapping.js"></script>   
+</body>
+</html>
